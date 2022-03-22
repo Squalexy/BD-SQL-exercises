@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<!-- saved from url=(0101)http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&sgid=1&sid=3&server_type=pg&did=16396 -->
+<html class="no-js" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>dbfichas/aulaspl@aulaspl</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- To set pgAdmin4 shortcut icon in browser -->
+    <link rel="shortcut icon" href="http://127.0.0.1:4766/favicon.ico?ver=43000">
+
+    <!-- Base template stylesheets -->
+    <link type="text/css" rel="stylesheet" href="./style.css">
+    <link type="text/css" rel="stylesheet" href="./pgadmin.style.css">
+    <link type="text/css" rel="stylesheet" href="./pgadmin.css">
+
+     <!--View specified stylesheets-->
+    <link type="text/css" rel="stylesheet" href="./browser.css">
+
+    <script>
+        /* This is used to change publicPath of webpack at runtime */
+        window.getChunkURL = function() {
+            return "/static/js/generated/";
+        };
+    </script>
+    <!-- Base template scripts -->
+    <script type="text/javascript" src="./require.min.js.descarregar"></script>
+    <script type="text/javascript">
+            require.config({
+                baseUrl: '',
+                urlArgs: 'ver=43000',
+                waitSeconds: 0,
+                shim: {},
+                paths: {
+                    sources: "/static/js",
+                    datagrid: "/static/js/generated/datagrid",
+                    sqleditor: "/static/js/generated/sqleditor",
+                    'pgadmin.browser.utils': "/browser/" + "js/utils",
+                    'pgadmin.browser.endpoints': "/browser/" + "js/endpoints",
+                    'pgadmin.browser.messages': "/browser/" + "js/messages",
+                    'pgadmin.server.supported_servers': "/browser/" + "server/supported_servers",
+                    'pgadmin.user_management.current_user': "/user_management/" + "current_user",
+                    'translations': "/tools/" + "translations"
+                }
+            });
+
+    </script>
+
+    <!-- View specified scripts -->
+    <script type="text/javascript" src="./vendor.main.js.descarregar"></script>
+    <script type="text/javascript" src="./vendor.others.js.descarregar"></script>
+    <script type="text/javascript" src="./pgadmin_commons.js.descarregar"></script>
+
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/generated/browser_nodes" src="./browser_nodes.js.descarregar"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/generated/codemirror" src="./codemirror.js.descarregar"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/generated/slickgrid" src="./slickgrid.js.descarregar"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/generated/sqleditor" src="./sqleditor.js.descarregar"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="translations" src="./translations.js.descarregar"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pgadmin.browser.endpoints" src="./endpoints.js.descarregar"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pgadmin.user_management.current_user" src="./current_user.js.descarregar"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pgadmin.browser.utils" src="./utils.js.descarregar"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pgadmin.browser.messages" src="./messages.js.descarregar"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pgadmin.server.supported_servers" src="./supported_servers.js.descarregar"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/gettext" src="./gettext.js.descarregar"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/pgadmin" src="./pgadmin.js.descarregar"></script><link id="wcTheme" rel="stylesheet" type="text/css" href="./webcabin.overrides(2).css"><style type="text/css" rel="stylesheet">.slickgrid_505620 .slick-header-column { left: 1000px; } .slickgrid_505620 .slick-top-panel { height:25px; } .slickgrid_505620 .slick-preheader-panel { height:25px; } .slickgrid_505620 .slick-headerrow-columns { height:25px; } .slickgrid_505620 .slick-footerrow-columns { height:25px; } .slickgrid_505620 .slick-cell { height:25px; } .slickgrid_505620 .slick-row { height:25px; } .slickgrid_505620 .l0 { } .slickgrid_505620 .r0 { } .slickgrid_505620 .l1 { } .slickgrid_505620 .r1 { } .slickgrid_505620 .l2 { } .slickgrid_505620 .r2 { }</style></head>
+<body tabindex="0" class="wcDesktop">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<style>
+    body {padding: 0px;}
+    </style>
+<link type="text/css" rel="stylesheet" href="./browser.css">
+<div id="main-editor_panel">
+    <div class="sql-editor">
+        <div id="btn-toolbar" class="editor-toolbar" role="toolbar" aria-label="">
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-show-query-tool" type="button" class="btn btn-sm btn-primary-icon btn-show-query-tool" title="Query tool (Alt+Shift+Q)" aria-label="Query tool (Alt+Shift+Q)" tabindex="0">
+                    <i class="pg-font-icon icon-query-tool" aria-hidden="true" role="img"></i>
+                </button>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-load-file" type="button" class="btn btn-sm btn-primary-icon btn-load-file" title="Open File (accesskey + O)" accesskey="O" tabindex="0" aria-label="Open File (accesskey + O)">
+                    <i class="fa fa-folder-open sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <button id="btn-save-file" type="button" class="btn btn-sm btn-primary-icon" title="Save File (accesskey + S)" accesskey="S" aria-label="Save File (accesskey + S)">
+                    <i class="fa fa-save sql-icon-lg" aria-hidden="true" tabindex="0" role="img"></i>
+                </button>
+                <button id="btn-file-menu-dropdown" type="button" class="btn btn-sm btn-primary-icon dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-label="file menu">
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" id="btn-file-menu-save" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0" style="display: block;">
+                            <span>Save</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-file-menu-save-as" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <span>Save As</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-save-data" type="button" class="btn btn-sm btn-primary-icon" title="Save Data Changes (F6)" accesskey="" tabindex="0" disabled="" aria-label="Save Data Changes (F6)">
+                    <i class="pg-font-icon icon-save-data-changes sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-find" type="button" class="btn btn-sm btn-primary-icon" aria-label="Find" title="Find (Ctrl/Cmd+F)">
+                    <i class="fa fa-search sql-icon-lg" aria-hidden="true" tabindex="0" role="img"></i>
+                </button>
+                <button id="btn-find-menu-dropdown" type="button" class="btn btn-sm btn-primary-icon dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Find (accesskey + N)" accesskey="N" tabindex="0" aria-label="Find (accesskey + N)">
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" id="btn-find-menu-find" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <span> Find                                  (Ctrl+F)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-find-menu-find-next" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <span> Find Next                                  (Ctrl+G)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-find-menu-find-previous" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <span> Find Previous                                  (Ctrl+Shift+G)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-find-menu-find-persistent" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <span>Persistent Find</span>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a class="dropdown-item" id="btn-find-menu-replace" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <span> Replace                                  (Ctrl+Shift+F)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-find-menu-replace-all" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <span>Replace All</span>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a class="dropdown-item" id="btn-find-menu-jump" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <span>Jump (Alt+G)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-copy-row" type="button" class="btn btn-sm btn-primary-icon" title="Copy (accesskey + C)" accesskey="C" tabindex="0" disabled="" aria-label="Copy (accesskey + C)">
+                    <i class="fa fa-copy sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <button id="btn-copy-row-dropdown" type="button" class="btn btn-sm btn-primary-icon dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-label="copy row">
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" id="btn-copy-with-header" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <i class="copy-with-header fa fa-check visibility-hidden" aria-hidden="true" role="img"></i>
+                            <span> Copy with headers </span>
+                        </a>
+                    </li>
+                </ul>
+                <button id="btn-paste-row" type="button" class="btn btn-sm btn-primary-icon" title="Paste (accesskey + P)" accesskey="P" tabindex="0" disabled="" aria-label="Paste (accesskey + P)">
+                    <i class="fa fa-paste sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-delete-row" type="button" class="btn btn-sm btn-primary-icon" title="Delete (accesskey + D)" accesskey="D" tabindex="0" disabled="" aria-label="Delete (accesskey + D)">
+                    <i class="fa fa-trash-alt sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-edit-dropdown" type="button" class="btn btn-sm btn-primary-icon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Edit" title="Edit" tabindex="0">
+                    <i class="fa fa-edit sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" id="btn-indent-code" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <span> Indent Selection (Tab) </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-unindent-code" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <span> Unindent Selection (Shift+Tab) </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-comment-line" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <span> Inline Comment Selection                                  (Ctrl+/)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-uncomment-line" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <span> Inline Uncomment Selection                                  (Ctrl+.)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-toggle-comment-block" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <span> Block Comment/Uncomment Selection                                  (Shift+Ctrl+/)</span>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a class="dropdown-item" id="btn-format-sql" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <span>Format SQL                                  (Shift+Ctrl+K)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-filter" type="button" class="btn btn-secondary" title="Filter (accesskey + F)" accesskey="F" tabindex="0" disabled="" aria-label="Filter (accesskey + F)">
+                    <i class="fa fa-filter sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <button id="btn-filter-dropdown" type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Filter options (accesskey + I)" accesskey="I" disabled="" tabindex="0" aria-label="Filter options (accesskey + I)">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li>
+                        <a id="btn-filter-menu" class="dropdown-item" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">Sort/Filter</a>
+                    </li>
+                    <li>
+                        <a id="btn-include-filter" class="dropdown-item" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">Filter by Selection</a>
+                    </li>
+                    <li>
+                        <a id="btn-exclude-filter" class="dropdown-item" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">Exclude by Selection</a>
+                    </li>
+                    <li>
+                        <a id="btn-remove-filter" class="dropdown-item" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">Remove Sort/Filter</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <select id="btn-rows-limit" class="limit form-control form-control-sm" disabled="" title="Rows limit (accesskey + R)" accesskey="R" tabindex="0" aria-label="Rows limit (accesskey + R)">
+                    <option value="-1">No limit</option>
+                    <option value="1000">1000 rows</option>
+                    <option value="500">500 rows</option>
+                    <option value="100">100 rows</option>
+                </select>
+            </div>
+
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-cancel-query" type="button" class="btn btn-sm btn-primary-icon" title="Cancel query (accesskey + Q)" accesskey="Q" tabindex="0" aria-label="Cancel query (accesskey + Q)" disabled="">
+                    <i class="fa fa-stop sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <button id="btn-flash" data-test-selector="execute-refresh-button" type="button" class="btn btn-sm btn-primary-icon" style="width: 32px;" title="Execute/Refresh (F5)" tabindex="0" data-click-counter="9" aria-label="Execute/Refresh (F5)">
+                    <i class="fa fa-play sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <button id="btn-query-dropdown" type="button" class="btn btn-sm btn-primary-icon dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" accesskey="X" title="Execute options (accesskey + X)" tabindex="0" aria-label="Execute options (accesskey + X)">
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" id="btn-auto-commit" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <i class="auto-commit fa fa-check" aria-hidden="true" role="img"></i>
+                            <span> Auto commit? </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-auto-rollback" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <i class="auto-rollback fa fa-check visibility-hidden" aria-hidden="true" role="img"></i>
+                            <span> Auto rollback? </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-explain" type="button" class="btn btn-sm btn-primary-icon" title="Explain (F7)" accesskey="" tabindex="0" aria-label="Explain (F7)">
+                    <i class="fa fa-hand-pointer sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <button id="btn-explain-analyze" type="button" class="btn btn-sm btn-primary-icon" title="Explain Analyze (Shift+F7)" accesskey="" aria-label="Explain Analyze (Shift+F7)">
+                    <i class="fa fa-list-alt sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <button id="btn-explain-options-dropdown" type="button" class="btn btn-sm btn-primary-icon dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-label="explain">
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" id="btn-explain-verbose" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <i class="explain-verbose fa fa-check visibility-hidden" aria-hidden="true" role="img"></i>
+                            <span> Verbose </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-explain-costs" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <i class="explain-costs fa fa-check visibility-hidden" aria-hidden="true" role="img"></i>
+                            <span> Costs </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-explain-buffers" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <i class="explain-buffers fa fa-check visibility-hidden" aria-hidden="true" role="img"></i>
+                            <span> Buffers </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-explain-timing" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <i class="explain-timing fa fa-check visibility-hidden" aria-hidden="true" role="img"></i>
+                            <span> Timing </span>
+                        </a>
+                    </li>
+                    <li data-min-ver="100000">
+                        <a class="dropdown-item" id="btn-explain-summary" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <i class="explain-summary fa fa-check visibility-hidden" aria-hidden="true" role="img"></i>
+                            <span> Summary </span>
+                        </a>
+                    </li>
+                    <li data-min-ver="120000">
+                        <a class="dropdown-item" id="btn-explain-settings" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <i class="explain-settings fa fa-check visibility-hidden" aria-hidden="true" role="img"></i>
+                            <span> Settings </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-commit" type="button" class="btn btn-sm btn-primary-icon" title="Commit (Shift+Ctrl+M)" accesskey="" tabindex="0" disabled="" aria-label="Commit (Shift+Ctrl+M)">
+                    <i class="pg-font-icon icon-commit sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <button id="btn-rollback" type="button" class="btn btn-sm btn-primary-icon" title="Rollback (Shift+Ctrl+R)" tabindex="0" disabled="" aria-label="Rollback (Shift+Ctrl+R)">
+                    <i class="pg-font-icon icon-rollback sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-clear-dropdown" type="button" class="btn btn-sm btn-primary-icon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Clear (accesskey + L)" accesskey="L" tabindex="0" aria-label="Clear (accesskey + L)">
+                    <i class="fa fa-eraser sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" id="btn-clear" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <span> Clear Query Window </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-clear-history" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <span> Clear History </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-group" role="group" aria-label="">
+                <button id="btn-save-results-to-file" type="button" class="btn btn-sm btn-primary-icon" title="Save results to file (F8)" tabindex="0" aria-label="Save results to file (F8)">
+                    <i class="fa fa-download sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+            </div>
+            <div class="btn-group mr-1 user_macros" role="group" aria-label="">
+                <button id="btn-macro-dropdown" type="button" class="btn btn-sm btn-primary-icon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Macros" title="Macros" tabindex="0">
+                    <i class="fa fa-scroll sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" id="btn-manage-macros" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">
+                            <span> Manage Macros... </span>
+                        </a>
+                    </li>
+                                                        </ul>
+            </div>
+        </div>
+
+        <div class="connection_status_wrapper d-flex">
+            <div id="btn-conn-status" role="status" class="connection_status d-flex justify-content-center align-items-center" data-container="body" data-toggle="popover" data-placement="bottom" data-content="The session is idle and there is no current transaction." data-panel-visible="visible" accesskey="T" tabindex="0" data-original-title="" title="">
+                <i class="pg-font-icon icon-query-tool-connected" aria-hidden="true" title="Connection status (click for details) (accesskey + T)" role="img">
+                </i>
+            </div>
+            <div class="connection-info btn-group mr-1" role="group" aria-label="" style="background-color: ; color: ;">
+                <div class="connection-data" data-toggle="dropdown">
+                    <div class="editor-title" aria-haspopup="true" aria-expanded="false" style="background-color: ; color: ;">dbfichas/aulaspl@aulaspl</div>
+                    <span class="conn-info-dd dropdown-toggle dropdown-toggle-split" aria-haspopup="true" aria-expanded="false"></span>
+                </div>
+                <ul class="dropdown-menu" id="connections-list"><li class="connection-list-item selected-connection" data-index="0"><a class="dropdown-item" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">dbfichas/aulaspl@aulaspl</a></li><li class="connection-list-item" data-index="1"><a class="dropdown-item" href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="0">&lt;New Connection&gt;</a></li></ul>
+            </div>
+
+
+        </div>
+        <div id="editor-panel" tabindex="0">
+            <div id="fetching_data" class="pg-sp-container sql-editor-busy-fetching d-none">
+                <div class="pg-sp-content">
+                    <div class="row">
+                        <div class="col-12 pg-sp-icon sql-editor-busy-icon"></div>
+                    </div>
+                    <div class="row"><div class="col-12 pg-sp-text sql-editor-busy-text">Loading data from the database server and rendering...</div></div>
+                </div>
+            </div>
+        <div class="wcDocker"><div class="wcDockerTransition"></div><div class="wcLayoutPane" style="width: 952.05px; left: 0px; top: 0px; bottom: 0px;"><div class="wcFrame wcWide wcTall"><div class="wcFrameTitleBar wcTabTop" style="width: 952.05px;"><div class="wcTabScroller" style="left: 0px;"><div class="wcPanelTab wcPanelTabActive" id="0"><div><a href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="-1" class="panel-link-heading">Query Editor</a></div></div><div class="wcPanelTab" id="1"><div><a href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="-1" class="panel-link-heading">Query History</a></div></div></div><div class="wcFrameButtonBar" style="min-width: 0px; width: 0px; right: 0px;"></div></div><div class="wcFrameButtonBar" style="min-width: 0px; width: 0px;"><div class="wcFrameButton" title="Close the currently active panel tab" aria-label="Close panel" tabindex="0" style="display: none;"><div class="fa fa-times"></div></div><div class="wcFrameButton" title="Collapse the active panel" style="display: none;"><div class="fa fa-download"></div>C</div></div><div class="wcFrameCenter wcPanelBackground wcScrollableX wcScrollableY" style="left: 0px; right: 0px; bottom: 0px;"><div class="wcPanelTabContent" id="0"><table class="wcLayout wcWide wcTall"><tbody><tr><td><div class="pg-panel-content"><label for="sql_query_tool" class="sr-only">SQL Editor<textarea id="sql_query_tool" tabindex="-1"></textarea></label><div id="output-panel" tabindex="0"><textarea id="sql_query_tool" tabindex="-1" style="display: none;"></textarea><div class="CodeMirror cm-s-default CodeMirror-simplescroll" style="font-size: 1em;"><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: block; right: 16px; left: 42px;"><div style="width: 574.257px; left: 0px;"></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: block; bottom: 16px;"><div style="height: 243.999px; top: 237.822px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true" style="display: block; height: 16px; width: 16px;"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="false"><div class="CodeMirror-sizer" style="margin-left: 42px; margin-bottom: -16px; border-right-width: 34px; min-height: 1090px; min-width: 1443.4px; padding-right: 16px; padding-bottom: 16px;"><div style="position: relative; top: 291.2px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>52</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""></div><div class="CodeMirror-code" role="presentation" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" aria-label="SQL editor" tabindex="0" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">15</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">SELECT</span> <span class="cm-keyword">COUNT</span><span class="cm-bracket">(</span><span class="cm-operator">*</span><span class="cm-bracket">)</span> <span class="cm-keyword">AS</span> "Empregados sem premio"</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">16</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">FROM</span> emp</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">17</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">WHERE</span> emp<span class="cm-variable-2">.premios</span> <span class="cm-keyword">IS</span> <span class="cm-atom">NULL</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">18</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">19</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">-- ex4</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">20</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">21</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">SELECT</span> <span class="cm-keyword">COUNT</span><span class="cm-bracket">(</span>emp<span class="cm-variable-2">.nome</span><span class="cm-bracket">)</span> <span class="cm-keyword">AS</span> "Total de empregados"<span class="cm-punctuation">,</span> ROUND<span class="cm-bracket">(</span><span class="cm-keyword">AVG</span><span class="cm-bracket">(</span>emp<span class="cm-variable-2">.sal</span><span class="cm-bracket">)</span><span class="cm-punctuation">,</span><span class="cm-number">2</span><span class="cm-bracket">)</span> <span class="cm-keyword">AS</span> "Salário <span class="cm-keyword">m</span>édio mensal"<span class="cm-punctuation">,</span> <span class="cm-keyword">SUM</span><span class="cm-bracket">(</span>emp<span class="cm-variable-2">.sal</span> <span class="cm-operator">*</span> <span class="cm-number">12</span> <span class="cm-operator">+</span> <span class="cm-keyword">COALESCE</span><span class="cm-bracket">(</span>emp<span class="cm-variable-2">.premios</span><span class="cm-punctuation">,</span> <span class="cm-number">0</span><span class="cm-bracket">))</span> <span class="cm-keyword">AS</span> "Renumeração total anual"</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">22</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">FROM</span> emp</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">23</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">24</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">-- ex5</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">25</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">26</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">SELECT</span> emp<span class="cm-variable-2">.nome</span> <span class="cm-keyword">as</span> "NOME"<span class="cm-punctuation">,</span> emp<span class="cm-variable-2">.funcao</span> <span class="cm-keyword">AS</span> "FUNCAO"<span class="cm-punctuation">,</span> emp<span class="cm-variable-2">.sal</span> <span class="cm-keyword">AS</span> "SAL"<span class="cm-punctuation">,</span> ROUND<span class="cm-bracket">(</span>emp<span class="cm-variable-2">.sal</span><span class="cm-operator">*</span><span class="cm-number">1.1355</span><span class="cm-punctuation">,</span> <span class="cm-number">1</span><span class="cm-bracket">)</span> <span class="cm-keyword">as</span> "Salário com aumento"</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">27</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">FROM</span> emp </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">28</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">WHERE</span> emp<span class="cm-variable-2">.funcao</span> <span class="cm-operator">=</span> <span class="cm-string">'Continuo'</span> </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">29</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">30</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">-- ex6</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">31</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">32</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">SELECT</span> emp<span class="cm-variable-2">.nome</span> <span class="cm-keyword">as</span> "NOME"<span class="cm-punctuation">,</span> emp<span class="cm-variable-2">.funcao</span> <span class="cm-keyword">AS</span> "FUNCAO"<span class="cm-punctuation">,</span> emp<span class="cm-variable-2">.sal</span> <span class="cm-keyword">AS</span> "SAL"<span class="cm-punctuation">,</span> <span class="cm-keyword">CEIL</span><span class="cm-bracket">(</span>emp<span class="cm-variable-2">.sal</span><span class="cm-operator">*</span><span class="cm-number">1.1355</span><span class="cm-bracket">)</span> <span class="cm-keyword">as</span> "Salário com aumento"</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">33</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">FROM</span> emp </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">34</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">WHERE</span> emp<span class="cm-variable-2">.funcao</span> <span class="cm-operator">=</span> <span class="cm-string">'Continuo'</span> </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">35</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">36</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">-- ex7</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">37</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">38</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">SELECT</span> RPAD<span class="cm-bracket">(</span>CONCAT<span class="cm-bracket">(</span><span class="cm-string">'&gt;&gt;&gt;&gt; '</span><span class="cm-punctuation">,</span> CONCAT<span class="cm-bracket">(</span>emp<span class="cm-variable-2">.nome</span><span class="cm-punctuation">,</span> <span class="cm-string">' '</span><span class="cm-bracket">))</span><span class="cm-punctuation">,</span> <span class="cm-number">25</span><span class="cm-punctuation">,</span> <span class="cm-string">'&lt;'</span><span class="cm-bracket">)</span> <span class="cm-keyword">AS</span> "Strings"</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">39</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">FROM</span> emp</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">40</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">ORDER</span> <span class="cm-keyword">BY</span> emp<span class="cm-variable-2">.nome</span> <span class="cm-keyword">ASC</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">41</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">42</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">-- ex8</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">43</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">44</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">SELECT</span> <span class="cm-keyword">MIN</span><span class="cm-bracket">(</span>sal<span class="cm-bracket">)</span><span class="cm-punctuation">,</span> <span class="cm-keyword">MAX</span><span class="cm-bracket">(</span>sal<span class="cm-bracket">)</span><span class="cm-punctuation">,</span> ROUND<span class="cm-bracket">(</span><span class="cm-keyword">AVG</span><span class="cm-bracket">(</span>sal<span class="cm-bracket">)</span><span class="cm-punctuation">,</span><span class="cm-number">2</span><span class="cm-bracket">)</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">45</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">FROM</span> emp</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">46</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">47</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">-- ex9</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">48</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">49</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">SELECT</span> emp<span class="cm-variable-2">.ndep</span><span class="cm-punctuation">,</span> <span class="cm-keyword">MAX</span><span class="cm-bracket">(</span>emp<span class="cm-variable-2">.sal</span><span class="cm-bracket">)</span> <span class="cm-operator">-</span> <span class="cm-keyword">MIN</span><span class="cm-bracket">(</span>emp<span class="cm-variable-2">.sal</span><span class="cm-bracket">)</span> <span class="cm-keyword">AS</span> "Diferença"</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">50</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">FROM</span> emp</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">51</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">GROUP</span> <span class="cm-keyword">BY</span> emp<span class="cm-variable-2">.ndep</span> </span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">52</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">ORDER</span> <span class="cm-keyword">BY</span> emp<span class="cm-variable-2">.ndep</span> <span class="cm-keyword">ASC</span></span></pre></div><div style="position: relative; display: none;"><div class="CodeMirror-gutter-wrapper" contenteditable="false" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">50</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword CodeMirror-selectedtext">FROM</span><span class=" CodeMirror-selectedtext"> emp</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 34px; width: 1px; border-bottom: 16px solid transparent; top: 1090px;"></div><div class="CodeMirror-gutters" style="height: 1140px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div></div></div></td></tr></tbody></table></div><div class="wcPanelTabContent wcPanelTabContentHidden" id="1"><table class="wcLayout wcWide wcTall"><tbody><tr><td><div class="pg-panel-content"><div id="history_grid" class="sql-editor-history-container d-flex" tabindex="0"><div style="width: calc(50% - 0.5px);"><div class="toggle-and-history-container">
+            <div class="query-history-toggle">
+                <label class="control-label" for="generated-queries-toggle">
+                    Show queries generated internally by pgAdmin?
+                </label>
+                <div class="toggle btn btn-success btn-xs quick" data-toggle="toggle" style="width: 0px; height: 0px;"><input id="generated-queries-toggle" type="checkbox" class="pgadmin-controls" data-style="quick" data-size="mini" data-on="Yes" data-off="No" data-onstyle="success" data-offstyle="ternary" checked=""><div class="toggle-group"><label class="btn btn-success btn-xs toggle-on">Yes</label><label class="btn btn-ternary btn-xs toggle-off">No</label><span class="toggle-handle btn btn-light btn-xs"></span></div></div>
+            </div>
+            <div id="query_list" class="query-history" tabindex="0"><div class="query-group" data-key="2021 03 11">
+            <div class="date-label">Today - 11/03/2021</div>
+            <ul class="query-entries"><li class="list-item selected" tabindex="0" data-key="15:01:29">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.ndep, MAX(emp.sal) - MIN(emp.sal) AS "Diferença"
+FROM emp
+GROUP BY emp.ndep 
+ORDER BY emp.ndep ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">15:01:29</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="15:01:05">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.ndep, MAX(emp.sal) - MIN(emp.sal) AS "Diferença"
+FROM emp
+GROUP BY emp.ndep 
+              </div>
+              <div class="other-info">
+              <div class="timestamp">15:01:05</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="15:00:25">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.ndep, MAX(emp.sal) - MIN(emp.sal) AS "Diferença"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">15:00:25</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:59:36">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  
+SELECT dep.ndep, MAX(emp.sal) - MIN(emp.sal)
+FROM emp, dep
+WHERE emp.ndep = dep.ndep
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:59:36</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:59:25">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  
+SELECT dep.ndep, MAX(emp.sal) - MIN(emp.sal)
+FROM emp, dep
+WHERE emp.ndep = dep.ndep
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:59:25</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:55:51">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT RPAD(CONCAT('&gt;&gt;&gt;&gt; ', CONCAT(emp.nome, ' ')), 25, '&lt;') AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:55:51</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:55:26">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT RPAD(CONCAT('&gt;&gt;&gt;&gt; ', CONCAT(emp.nome, ' '), 25, '&lt;') AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:55:26</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:54:52">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT RPAD(CONCAT('&gt;&gt;&gt;&gt;', emp.nome), 20, '&lt;') AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:54:52</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:54:34">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  
+SELECT MIN(sal), MAX(sal), ROUND(AVG(sal),2)
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:54:34</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:54:02">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT MIN(sal), AVG(sal), MAX(sal)
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:54:02</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:52:13">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT RPAD(CONCAT('&gt;&gt;&gt;&gt;', emp.nome), 20, '&lt;')   AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:52:13</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:52:05">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT RPAD(CONCAT('&gt;&gt;&gt;&gt;', emp.nome), 20, '&gt;')   AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:52:05</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:51:36">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT RPAD(CONCAT('&gt;&gt;&gt;&gt;', emp.nome), 16 - LENGTH(emp.nome), '&gt;')   AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:51:36</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:51:14">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT RPAD(CONCAT('&gt;&gt;&gt;&gt;', emp.nome)), 16 - LENGTH(emp.nome), '&gt;')   AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:51:14</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:51:09">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT RPAD(CONCAT('&gt;&gt;&gt;&gt;', emp.nome)), 16 - LENGTH(emp.nome), '&gt;'))   AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:51:09</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:50:43">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT RPAD(CONCAT('&gt;&gt;&gt;&gt;', emp.nome)), '&gt;', 16 - LENGTH(emp.nome))  AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:50:43</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:50:38">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT RPAD(CONCAT('&gt;&gt;&gt;&gt;', emp.nome)), '&gt;', 16 - LENGTH(emp.nome)))  AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:50:38</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:48:10">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT CONCAT(CONCAT('&gt;&gt;&gt;&gt;', emp.nome), REPLICATE('&gt;', 16 - LENGTH(emp.nome)))  AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:48:10</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:46:57">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT CONCAT(CONCAT('&gt;&gt;&gt;&gt;', emp.nome), '&gt;'*16 - LENGTH(emp.nome)) AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:46:57</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:43:27">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT CONCAT('&gt;&gt;&gt;&gt;', emp.nome) AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:43:27</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:42:12">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  
+SELECT '&gt;&gt;&gt;&gt;' + emp.nome AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:42:12</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:41:57">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome + '&gt;&gt;&gt;&gt;' AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:41:57</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:41:24">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome || "&gt;&gt;&gt;&gt;" AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:41:24</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:40:54">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT CONCAT(emp.nome, "&gt;&gt;&gt;&gt;") AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:40:54</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:40:43">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT (emp.nome, "&gt;&gt;&gt;&gt;") AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:40:43</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:39:43">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT ('&gt;&gt;&gt;&gt;' + emp.nome) AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:39:43</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:39:25">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT CONCACT('&gt;&gt;&gt;&gt;' + emp.nome) AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:39:25</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:38:44">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  
+SELECT CONCACT(&gt;&gt;&gt;&gt;, emp.nome) AS "Strings"
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:38:44</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:38:23">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT CONCACT(&gt;&gt;&gt;&gt;, emp.nome)
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:38:23</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:37:31">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT CONCACT('&gt;&gt;&gt;&gt;', emp.nome)
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:37:31</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:37:18">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT CONCACT("&gt;&gt;&gt;&gt;", emp.nome)
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:37:18</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:36:03">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  
+SELECT emp.nome
+FROM emp
+ORDER BY emp.nome ASC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:36:03</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:35:47">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:35:47</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:31:20">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "SAL", CEIL(emp.sal*1.1355) as "Salário com aumento"
+FROM emp 
+WHERE emp.funcao = 'Continuo' 
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:31:20</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:31:16">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "SAL", ROUND(emp.sal*1.1355, 1) as "Salário com aumento"
+FROM emp 
+WHERE emp.funcao = 'Continuo' 
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:31:16</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:30:51">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  
+SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "SAL", CEIL(emp.sal*1.1355) as "Salário com aumento"
+FROM emp 
+WHERE emp.funcao = 'Continuo' 
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:30:51</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:30:26">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "SAL", emp.sal*1.1355 as "SAL2"
+FROM emp 
+WHERE emp.funcao = 'Continuo' 
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:30:26</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:26:38">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "SAL", emp.sal*0.1355 as "SAL2"
+FROM emp 
+WHERE emp.funcao = 'Continuo' 
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:26:38</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:25:54">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "SAL", emp.sal*13.55 as "SAL2"
+FROM emp 
+WHERE emp.funcao = 'Continuo' 
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:25:54</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:25:44">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "SAL", emp.sal as "SAL2"
+FROM emp 
+WHERE emp.funcao = 'Continuo' 
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:25:44</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:20:27">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "SAL"
+FROM emp
+WHERE emp.funcao = 'Continuo' 
+UNION
+SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "Salário com aumento"
+FROM emp
+WHERE emp.funcao = 'Continuo' AND emp.sal = emp.sal * 13.55
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:20:27</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:20:22">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "SAL"
+FROM emp
+WHERE emp.funcao = 'Continuo' 
+UNION
+SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "Salário com aumento"
+FROM emp
+WHERE emp.funcao = 'Continuo' AND emp.sal = emp.sal * 13,55
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:20:22</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:19:18">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "SAL"
+FROM emp
+WHERE emp.funcao = 'Continuo' 
+UNION ALL
+SELECT emp.sal AS "Salário com aumento"
+FROM emp
+WHERE emp.funcao = 'Continuo'
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:19:18</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:19:11">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "SAL"
+FROM emp
+WHERE emp.funcao = 'Continuo' 
+UNION ALL
+SELECT emp.sal *13,55 AS "Salário com aumento"
+FROM emp
+WHERE emp.funcao = 'Continuo'
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:19:11</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:18:19">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "SAL"
+FROM emp
+WHERE emp.funcao = 'Continuo' 
+UNION
+SELECT emp.sal*13,55 AS "Salário com aumento"
+FROM emp
+WHERE emp.funcao = 'Continuo'
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:18:19</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:15:29">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "SAL", emp.sal*13,55 AS "Salário com aumento"
+FROM emp
+WHERE emp.funcao = 'Continuo' 
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:15:29</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:15:12">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "SAL", (emp.sal + emp.sal*13,55) AS "Salário com aumento"
+FROM emp
+WHERE emp.funcao = 'Continuo' 
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:15:12</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:14:55">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "SAL", [emp.sal + emp.sal*13,55] AS "Salário com aumento"
+FROM emp
+WHERE emp.funcao = 'Continuo' 
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:14:55</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:14:12">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "SAL", emp.sal + emp.sal*13,55 AS "Salário com aumento"
+FROM emp
+WHERE emp.funcao = 'Continuo' 
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:14:12</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:14:01">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "SAL", emp.sal emp.sal*13,55 AS "Salário com aumento"
+FROM emp
+WHERE emp.funcao = 'Continuo' 
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:14:01</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:13:04">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT COUNT(emp.nome) AS "Total de empregados", ROUND(AVG(emp.sal),2) AS "Salário médio mensal", SUM(emp.sal * 12 + COALESCE(emp.premios, 0)) AS "Renumeração total anual"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:13:04</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:11:00">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT COUNT(emp.nome) AS "Total de empregados", ROUND(AVG(emp.sal),2) AS "Salário médio mensal", sal * 12 + COALESCE(emp.premios, 0) AS "Renumeração total anual"
+FROM emp
+
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:11:00</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:10:46">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT COUNT(emp.nome) AS "Total de empregados", ROUND(AVG(emp.sal),2) AS "Salário médio mensal", emp.sal * 12 + COALESCE(emp.premios, 0) AS "Renumeração total anual"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:10:46</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:10:12">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT COUNT(emp.nome) AS "Total de empregados", ROUND(AVG(emp.sal),2) AS "Salário médio mensal", emp.sal*12 + COALESCE(emp.premios, 0) AS "Renumeração total anual"
+FROM emp
+
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:10:12</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:09:26">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT COUNT(emp.nome) AS "Total de empregados", ROUND(AVG(emp.sal),2) AS "Salário médio mensal", SUM(emp.sal*12) + COALESCE(emp.premios, 0) AS "Renumeração total anual"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:09:26</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:09:02">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT COUNT(emp.nome) AS "Total de empregados", ROUND(AVG(emp.sal),2) AS "Salário médio mensal", SUM(emp.sal*12) + COALESCE(emp.premios) AS "Renumeração total anual"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:09:02</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:08:31">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT COUNT(emp.nome) AS "Total de empregados", ROUND(AVG(emp.sal),2) AS "Salário médio mensal", SUM(emp.sal*12 + COALESCE(premios)) AS "Renumeração total anual"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:08:31</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:05:43">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "SAL", emp.sal + emp.sal*13,55 AS "Salário com aumento"
+FROM emp
+WHERE emp.funcao = 'Continuo' 
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:05:43</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:05:27">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "SAL", emp.sal AS "Salário com aumento"
+FROM emp
+WHERE emp.funcao = 'Continuo' AND emp.sal = emp.sal + emp.sal*13,55
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:05:27</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:05:02">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  
+SELECT emp.nome as "NOME", emp.funcao AS "FUNCAO", emp.sal AS "SAL", (emp.sal + emp.sal*13,55) AS "Salário com aumento"
+FROM emp
+WHERE emp.funcao = 'Continuo'
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:05:02</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:04:46">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  
+SELECT emp.nome as UPPER(NOME), emp.funcao AS UPPER(FUNCAO), emp.sal AS UPPER(SAL), (emp.sal + emp.sal*13,55) AS "Salário com aumento"
+FROM emp
+WHERE emp.funcao = 'Continuo'
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:04:46</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:04:38">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  
+SELECT emp.nom) as UPPER(NOME), emp.funcao AS UPPER(FUNCAO), emp.sal AS UPPER(SAL), (emp.sal + emp.sal*13,55) AS "Salário com aumento"
+FROM emp
+WHERE emp.funcao = 'Continuo'
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:04:38</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:03:07">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT UPPER(emp.nome) as NOME, UPPER(emp.funcao) AS FUNCAO, emp.sal AS SAL, (emp.sal + emp.sal*13,55) AS "Salário com aumento"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:03:07</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:02:49">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT UPPER(emp.nome) as NOME, UPPER(emp.funcao) AS FUNCAO, emp.sal AS SAL, emp.sal + emp.sal*13,55 AS "Salário com aumento"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:02:49</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:02:42">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT UPPER(emp.nome) as NOME, UPPER(emp.funcao) AS FUNCAO, UPPER(emp.sal) AS SAL, emp.sal + emp.sal*13,55 AS "Salário com aumento"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:02:42</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:01:52">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT UPPER(emp.nome), UPPER(emp.funcao), UPPER(emp.sal), emp.sal + emp.sal*13,55 AS "Salário com aumento"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:01:52</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:01:37">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT UPPER(emp.nome) as Nome, UPPER(emp.funcao) as Funcao, UPPER(emp.sal) as Sal, emp.sal + emp.sal*13,55 AS "Salário com aumento"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:01:37</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:01:24">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT UPPER(emp.nome) as Nome, UPPER(emp.funcao) as Funcao, emp.sal as Sal, emp.sal + emp.sal*13,55 AS "Salário com aumento"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:01:24</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:01:03">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT UPPER(emp.nome) as Nome, UPPER(emp.funcao) as Funcao, emp.sal as Sal, ROUND(emp.sal + emp.sal*13,55, 1) AS "Salário com aumento"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:01:03</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:00:19">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT UPPER(emp.nome) as Nome, UPPER(emp.funcao) as Funcao, UPPER(emp.sal) as Sal, ROUND(emp.sal + emp.sal*13,55, 1) AS "Salário com aumento"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:00:19</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:00:08">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT UPPER(emp.nome) as Nome, UPPER(emp.funcao) as Funcao, 
+UPPER(emp.sal) as Sal, ROUND(emp.sal + emp.sal*13,55, 1) AS "Salário com aumento"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:00:08</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="13:59:48">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT UPPER(emp.nome), UPPER(emp.funcao), 
+UPPER(emp.sal), ROUND(emp.sal + emp.sal*13,55, 1) AS "Salário com aumento"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">13:59:48</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="13:59:10">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome as UPPER("Nome"), emp.funcao as UPPER("Funcao"), 
+emp.sal as UPPER("Sal"), ROUND(emp.sal + emp.sal*13,55, 1) AS "Salário com aumento"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">13:59:10</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="13:58:57">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome as UPPER(nome), emp.funcao as UPPER(funcao), 
+emp.sal as UPPER(sal), ROUND(emp.sal + emp.sal*13,55, 1) AS "Salário com aumento"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">13:58:57</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="13:56:40">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  
+SELECT COUNT(emp.nome) AS "Total de empregados", ROUND(AVG(emp.sal),2) AS "Salário médio mensal", SUM(emp.sal*12) AS "Renumeração total anual"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">13:56:40</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="13:55:19">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT COUNT(emp.nome) AS "Total de empregados", ROUND(AVG(emp.sal),2) AS "Salário médio mensal", SUM(emp.sal)*12 AS "Renumeração total anual"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">13:55:19</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="13:55:12">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  
+SELECT COUNT(emp.nome) AS "Total de empregados", ROUND(AVG(emp.sal),2) AS "Salário médio mensal", SUM(emp.sal)*13 AS "Renumeração total anual"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">13:55:12</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="13:54:41">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT COUNT(emp.nome) AS "Total de empregados", ROUND(AVG(emp.sal),2) AS "Salário médio mensal", SUM(emp.sal)*12 AS "Renumeração total anual"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">13:54:41</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="13:54:15">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT COUNT(emp.nome) AS "Total de empregados", ROUND(AVG(emp.sal),2) AS "Salário médio mensal", SUM(emp.sal) AS "Renumeração total anual"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">13:54:15</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="13:53:05">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT COUNT(emp.nome) AS "Total de empregados", AVG(emp.sal) AS "Salário médio mensal", SUM(emp.sal) AS "Renumeração total anual"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">13:53:05</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="13:51:16">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT COUNT(*) AS "Empregados sem premio"
+FROM emp
+WHERE emp.premios IS NULL
+              </div>
+              <div class="other-info">
+              <div class="timestamp">13:51:16</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="13:51:08">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT COUNT(*) AS "Empregados sem premio"
+FROM emp
+WHERE emp.empregado IS NULL
+              </div>
+              <div class="other-info">
+              <div class="timestamp">13:51:08</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="13:48:25">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT COUNT(emp.premios) AS "Empregados sem premio"
+FROM emp
+WHERE emp.premios IS null
+              </div>
+              <div class="other-info">
+              <div class="timestamp">13:48:25</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="13:48:04">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT COUNT(emp.premios) AS "Empregados sem premio"
+FROM emp
+WHERE emp.premios IS NULL
+              </div>
+              <div class="other-info">
+              <div class="timestamp">13:48:04</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="13:47:46">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT COUNT(emp.premios) AS "Empregados sem premio"
+FROM emp
+WHERE emp.premios = 'null'
+              </div>
+              <div class="other-info">
+              <div class="timestamp">13:47:46</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="13:46:09">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT COUNT(emp.nome) AS "Lista de empregados"
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">13:46:09</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="13:45:59">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT COUNT(emp.nome) AS Lista de empregados
+FROM emp
+              </div>
+              <div class="other-info">
+              <div class="timestamp">13:45:59</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="13:44:45">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT UPPER(emp.nome) AS Nome, LOWER(emp.funcao) AS Funcao, dep.nome AS Departamento
+FROM emp, dep
+WHERE emp.ndep = dep.ndep AND emp.funcao = 'Vendedor'
+ORDER BY emp.nome
+
+              </div>
+              <div class="other-info">
+              <div class="timestamp">13:44:45</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="13:44:11">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  
+SELECT UPPER(emp.nome) AS Nome, LOWER(emp.funcao) AS Funcao, dep.nome AS Departamento
+FROM emp, dep
+WHERE emp.ndep = dep.ndep
+ORDER BY emp.nome
+
+              </div>
+              <div class="other-info">
+              <div class="timestamp">13:44:11</div>
+              </div>
+          </div>
+      </li></ul>
+        </div><div class="query-group" data-key="2021 03 04">
+            <div class="date-label">04/03/2021</div>
+            <ul class="query-entries"><li class="list-item" tabindex="0" data-key="14:48:45">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT dep.ndep, dep.nome, dep.local
+FROM dep
+EXCEPT
+SELECT dep.ndep, dep.nome, dep.local
+FROM dep, emp
+WHERE dep.ndep = emp.ndep
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:48:45</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:48:40">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT dep.ndep, dep.nome, dep.local
+FROM dep
+EXCEPT
+SELECT deo.ndep, dep.nome, dep.local
+FROM dep, emp
+WHERE dep.ndep = emp.ndep
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:48:40</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:37:21">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT e1.nome AS nome , e2.nome AS subordinado
+FROM emp AS e1, emp AS e2
+WHERE e1.nemp = e2.encar
+ORDER BY e1.nome, e2.nome
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:37:21</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:36:53">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT e1.nome AS nome , e2.nome AS subordinado
+FROM emp AS e1, emp AS e2
+WHERE e1.nemp = e2.encar
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:36:53</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:21:26">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome, emp.funcao, descontos.escalao, dep.nome
+FROM emp, descontos, dep
+WHERE emp.ndep = dep.ndep AND emp.funcao &lt;&gt; 'Continuo' AND sal BETWEEN salinf AND salsup
+ORDER BY descontos.escalao DESC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:21:26</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:21:25">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome, emp.funcao, descontos.escalao, dep.nome
+FROM emp, descontos, dep
+WHERE emp.ndep = dep.ndep AND emp.funcao &lt;&gt; 'Continuo' AND sal BETWEEN salinf AND salsup
+ORDER BY descontos.escalao DESC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:21:25</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:21:25">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome, emp.funcao, descontos.escalao, dep.nome
+FROM emp, descontos, dep
+WHERE emp.ndep = dep.ndep AND emp.funcao &lt;&gt; 'Continuo' AND sal BETWEEN salinf AND salsup
+ORDER BY descontos.escalao DESC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:21:25</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:21:24">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome, emp.funcao, descontos.escalao, dep.nome
+FROM emp, descontos, dep
+WHERE emp.ndep = dep.ndep AND emp.funcao &lt;&gt; 'Continuo' AND sal BETWEEN salinf AND salsup
+ORDER BY descontos.escalao DESC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:21:24</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:20:26">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome, emp.funcao, descontos.escalao, dep.nome
+FROM emp, descontos, dep
+WHERE emp.ndep = dep.ndep AND emp.funcao &lt;&gt; 'Continuo' AND sal BETWEEN salinf AND salsup
+ORDER BY descontos.escalao DESC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:20:26</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:20:05">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome, emp.funcao, descontos.escalao, dep.nome
+FROM emp, descontos, dep
+WHERE emp.ndep = dep.ndep AND emp.funcao &lt;&gt; 'Continuo'
+ORDER BY descontos.escalao DESC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:20:05</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:19:45">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome, emp.funcao, descontos.escalao, dep.nome
+FROM emp, descontos, dep
+WHERE emp.funcao &lt;&gt; 'Continuo'
+ORDER BY descontos.escalao DESC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:19:45</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:19:35">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  
+SELECT emp.nome, emp.funcao, descontos.escalao, dep.nome
+FROM emp, descontos, dep
+ORDER BY descontos.escalao DESC
+WHERE emp.funcao &lt;&gt; 'Continuo'
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:19:35</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:19:01">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  
+SELECT emp.nome, emp.funcao, descontos.escalao, dep.nome
+FROM emp, descontos, dep
+ORDER BY descontos.escalao DESC
+WHERE emp.funcao IS NOT 'Continuo'
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:19:01</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:17:54">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome, emp.funcao, descontos.escalao, dep.nome
+FROM emp, descontos, dep
+ORDER BY descontos.escalao DESC
+EXCEPT
+SELECT emp.funcao
+FROM emp
+WHERE emp.funcao = 'Continuo'
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:17:54</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:17:32">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome, emp.funcao, descontos.escalao, dep.nome
+FROM emp, descontos, dep
+EXCEPT
+SELECT emp.funcao
+FROM emp
+WHERE emp.funcao = 'Continuo'
+ORDER BY descontos.escalao DESC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:17:32</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:17:27">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome, emp.funcao, descontos.escalao, dep.nome
+FROM emp, descontos, dep
+EXCEPT
+SELECT emp.funcao
+FROM emp
+WHERE emp.funcao = 'Continuo';
+ORDER BY descontos.escalao DESC
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:17:27</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:16:38">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome, emp.funcao, descontos.escalao, dep.nome
+FROM emp, descontos, dep
+ORDER BY descontos.escalao DESC
+EXCEPT
+SELECT emp.funcao
+FROM emp
+WHERE emp.funcao = 'Continuo';
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:16:38</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:15:50">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome, emp.funcao, descontos.escalao, dep.nome
+FROM emp, descontos, dep
+ORDER BY descontos.escalao DESC;
+
+EXCEPT
+
+SELECT emp.funcao
+FROM emp
+WHERE emp.funcao = 'Continuo';
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:15:50</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:15:42">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome, emp.funcao, descontos.escalao, dep.nome
+FROM emp, descontos, dep
+ORDER BY descontos.escalao DESC
+
+EXCEPT
+
+SELECT emp.funcao
+FROM emp
+WHERE emp.funcao = 'Continuo'
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:15:42</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:15:22">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg fa fa-play" role="img"></span>
+                  SELECT emp.nome, emp.funcao, descontos.escalao, dep.nome
+FROM emp, descontos, dep
+ORDER BY descontos.escalao DESC
+EXCEPT
+SELECT emp.funcao
+FROM emp
+WHERE emp.funcao = 'Continuo'
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:15:22</div>
+              </div>
+          </div>
+      </li></ul>
+        </div></div>
+        </div></div><div class="gutter gutter-horizontal" style="width: 1px;"></div><div style="width: calc(50% - 0.5px);"><div id="query_detail" class="query-detail">
+            <div class="error-message-block d-none"></div>
+            <div class="info-message-block d-none"></div>
+            <div class="metadata-block"><div class="metadata"><div class="item">
+                  <span class="value">11/03/2021 15:01:29</span>
+                  <span class="description">Date</span>
+              </div><div class="item">
+                  <span class="value">3</span>
+                  <span class="description">Rows Affected</span>
+              </div><div class="item">
+                  <span class="value">74 msec</span>
+                  <span class="description">Duration</span>
+              </div></div></div>
+            <div class="query-statement-block">
+              <div id="history-detail-query">
+                <button class="btn-copy copy-all" tabindex="0" accesskey="y">Copy</button>
+                <button class="btn-copy-editor copy-to-editor" tabindex="0" accesskey="y">Copy to Query Editor</button>
+                <div><div class="CodeMirror cm-s-default" style="font-size: 1em;"><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 54px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true" style="display: block; right: 0px; left: 0px;"><div style="height: 100%; min-height: 1px; width: 53px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; min-width: 3px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"><pre class="CodeMirror-line" role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">SELECT</span> emp<span class="cm-variable-2">.ndep</span><span class="cm-punctuation">,</span> <span class="cm-keyword">MAX</span><span class="cm-bracket">(</span>emp<span class="cm-variable-2">.sal</span><span class="cm-bracket">)</span> <span class="cm-operator">-</span> <span class="cm-keyword">MIN</span><span class="cm-bracket">(</span>emp<span class="cm-variable-2">.sal</span><span class="cm-bracket">)</span> <span class="cm-keyword">AS</span> "Diferença"</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"></div><div class="CodeMirror-code" role="presentation" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true" tabindex="-1"></div></div></div></div></div><div style="position: absolute; height: 50px; width: 1px; border-bottom: 0px solid transparent;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div></div>
+              </div>
+            </div>
+            <div>
+              <hr class="block-divider">
+            </div>
+            <div class="message-block">
+              <div class="message">
+                <div class="message-header">Messages</div>
+                <div class="content"><pre class="content-value">Successfully run. Total query runtime: 74 msec.
+3 rows affected.</pre></div>
+              </div>
+            </div>
+        </div></div></div></div></td></tr></tbody></table></div></div></div></div><div class="wcLayoutPane" style="right: 0px; width: 313.35px; top: 0px; bottom: 0px;"><div class="wcFrame wcWide wcTall"><div class="wcFrameTitleBar wcTabTop" style="width: 313.35px;"><div class="wcFrameTitle"><a href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="-1" class="panel-link-heading">Scratch Pad</a></div><div class="wcTabScroller" style="left: 0px;"></div><div class="wcFrameButtonBar" style="min-width: 0px; width: 0px; right: 24px;"></div></div><div class="wcFrameButtonBar" style="min-width: 24px; width: 24px;"><div class="wcFrameButton" title="Close the currently active panel tab" aria-label="Close panel" tabindex="0" style=""><div class="fa fa-times"></div></div><div class="wcFrameButton" title="Collapse the active panel" style="display: none;"><div class="fa fa-download"></div>C</div></div><div class="wcFrameCenter wcPanelBackground wcScrollableX wcScrollableY" style="left: 0px; right: 0px; bottom: 0px;"><div class="wcPanelTabContent" id="0"><table class="wcLayout wcWide wcTall"><tbody><tr><td><div class="pg-panel-content"><div class="sql-scratch"><textarea wrap="off" tabindex="0"></textarea></div></div></td></tr></tbody></table></div></div></div></div><div class="wcSplitterBar wcTall wcSplitterBarV" style="left: 949.05px; top: 0px; height: 550.9px;"><div class="wcSplitterBarLine"></div></div></div></div>
+    </div>
+</div>
+<script>
+            require(['sources/generated/browser_nodes', 'sources/generated/codemirror', 'sources/generated/slickgrid'], function() {
+    require(['sources/generated/sqleditor'], function(ctx) {
+        var $ = pgAdmin.SqlEditor.jquery,
+            S = pgAdmin.SqlEditor.S,
+            editorPanel = $('.sql-editor'),
+            loadingDiv = $('#fetching_data'),
+            msgDiv = loadingDiv.find('.sql-editor-busy-text');
+
+        // Register unload event on window close.
+        /* If opened in new tab, close the connection only on tab/window close and
+         * not on refresh attempt because the user may cancel the reload
+         */
+        if(window.opener) {
+          $(window).on('unload', function(ev) {
+            $.ajax({
+              method: 'DELETE',
+              url: "/datagrid/" + "close/" + 6832813
+            });
+          });
+        } else {
+          $(window).on('beforeunload', function(ev) {
+            $.ajax({
+              method: 'DELETE',
+              url: "/datagrid/" + "close/" + 6832813
+            });
+          });
+        }
+
+        // Get the controller object from pgAdmin.SqlEditor
+        var sqlEditorController = pgAdmin.SqlEditor.create(editorPanel);
+
+        // Listen on events to show/hide loading-icon and change messages.
+        sqlEditorController.on('pgadmin-sqleditor:loading-icon:message', function(msg) {
+            msgDiv.text(msg);
+          }).on('pgadmin-sqleditor:loading-icon:show', function(msg) {
+            loadingDiv.removeClass('d-none');
+            msgDiv.text(msg);
+          }).on('pgadmin-sqleditor:loading-icon:hide', function() {
+            loadingDiv.addClass('d-none');
+          });
+                    var script_type_url = '';
+                // Start the query tool.
+
+        sqlEditorController.start(
+            6832813,
+            {"is_query_tool": "true", "sgid": "1", "sid": "3", "server_type": "pg", "did": "16396", "title": "dbfichas/aulaspl@aulaspl"},
+            '{"floating":[],"root":{"type":"wcSplitter","horizontal":false,"isDrawer":false,"pane0":{"type":"wcSplitter","horizontal":true,"isDrawer":false,"pane0":{"type":"wcFrame","floating":false,"isFocus":false,"tabOrientation":"top","pos":{"x":0.5,"y":0.5},"size":{"x":924,"y":192.357},"tab":0,"panels":[{"type":"wcPanel","panelType":"sql_panel","size":{"x":924,"y":192.357},"customData":{}},{"type":"wcPanel","panelType":"history","size":{"x":1232,"y":192.357},"customData":{}}]},"pane1":{"type":"wcFrame","floating":false,"isFocus":false,"tabOrientation":"top","pos":{"x":0.5,"y":0.5},"size":{"x":308,"y":192.357},"tab":0,"panels":[{"type":"wcPanel","panelType":"scratch","size":{"x":308,"y":192.357},"customData":{}}]},"pos":0.7499999903532233},"pane1":{"type":"wcFrame","floating":false,"isFocus":false,"tabOrientation":"top","pos":{"x":0.5,"y":0.5},"size":{"x":1232,"y":582.9},"tab":0,"panels":[{"type":"wcPanel","panelType":"data_output","size":{"x":1232,"y":582.9},"customData":{}},{"type":"wcPanel","panelType":"explain","size":{"x":1232,"y":582.9},"customData":{}},{"type":"wcPanel","panelType":"messages","size":{"x":1232,"y":582.9},"customData":{}},{"type":"wcPanel","panelType":"notifications","size":{"x":1232,"y":582.9},"customData":{}}]},"pos":0.461226558540294}}',
+            []
+        );
+
+        // If opening from schema diff, set the generated script to the SQL Editor
+
+        var schema_ddl_diff = (window.opener !== null) ? window.opener.pgAdmin.ddl_diff : (window.parent !== null) ? window.parent.pgAdmin.ddl_diff : window.top.pgAdmin.ddl_diff;
+        sqlEditorController.set_value_to_editor(schema_ddl_diff);
+        if (window.opener !== null) window.opener.pgAdmin.ddl_diff = '';
+        else if (window.parent !== null) window.parent.pgAdmin.ddl_diff = '';
+        else if (window.top !== null) window.top.pgAdmin.ddl_diff = '';
+
+    });
+});
+
+</script>
+
+
+<div class="alertify ajs-hidden  ajs-movable ajs-pinnable ajs-zoom"><div class="ajs-dimmer"></div><div class="ajs-modal" tabindex="0"><div class="ajs-dialog" tabindex="0"><button class="ajs-reset" aria-label="reset"></button><div class="ajs-commands"><button class="ajs-pin" aria-label="Pin"></button><button class="ajs-maximize" aria-label="Maximize" tabindex="0"></button><button class="ajs-close" aria-label="Close"></button></div><div class="ajs-header">AlertifyJS</div><div class="ajs-body"><div class="ajs-content"></div></div><div class="ajs-footer"><div class="ajs-auxiliary ajs-buttons"></div><div class="ajs-primary ajs-buttons"><button class="ajs-button btn btn-secondary fa fa-lg fa-times pg-alertify-button">Cancel</button><button class="ajs-button btn btn-primary fa fa-lg fa-check pg-alertify-button">OK</button></div></div><div class="ajs-handle"></div><button class="ajs-reset" aria-label="reset"></button></div></div></div><div class="alertify ajs-hidden  ajs-movable ajs-pinnable ajs-zoom"><div class="ajs-dimmer"></div><div class="ajs-modal" tabindex="0"><div class="ajs-dialog" tabindex="0"><button class="ajs-reset" aria-label="reset"></button><div class="ajs-commands"><button class="ajs-pin" aria-label="Pin"></button><button class="ajs-maximize" aria-label="Maximize" tabindex="0"></button><button class="ajs-close" aria-label="Close"></button></div><div class="ajs-header">AlertifyJS</div><div class="ajs-body"><div class="ajs-content"><p></p><label for="alertify-prompt-0" style="display: none;">HiddenLabel</label><input class="form-control" type="text" id="alertify-prompt-0"></div></div><div class="ajs-footer"><div class="ajs-auxiliary ajs-buttons"></div><div class="ajs-primary ajs-buttons"><button class="ajs-button btn btn-secondary fa fa-lg fa-times pg-alertify-button">Cancel</button><button class="ajs-button btn btn-primary fa fa-lg fa-check pg-alertify-button">OK</button></div></div><div class="ajs-handle"></div><button class="ajs-reset" aria-label="reset"></button></div></div></div><div class="alertify ajs-hidden  ajs-movable ajs-pinnable ajs-zoom"><div class="ajs-dimmer"></div><div class="ajs-modal" tabindex="0"><div class="ajs-dialog" tabindex="0"><button class="ajs-reset" aria-label="reset"></button><div class="ajs-commands"><button class="ajs-pin" aria-label="Pin"></button><button class="ajs-maximize" aria-label="Maximize" tabindex="0"></button><button class="ajs-close" aria-label="Close"></button></div><div class="ajs-header">AlertifyJS</div><div class="ajs-body"><div class="ajs-content"></div></div><div class="ajs-footer"><div class="ajs-auxiliary ajs-buttons"></div><div class="ajs-primary ajs-buttons"><button class="ajs-button btn btn-primary fa fa-lg fa-check pg-alertify-button">OK</button></div></div><div class="ajs-handle"></div><button class="ajs-reset" aria-label="reset"></button></div></div></div><div class="alertify-notifier ajs-bottom ajs-right"></div><div class="wcFrame wcWide wcTall wcFloating" style="z-index: 10; left: 198.4px; top: 217.043px; width: 633.2px; height: 299.45px;"><div class="wcFrameTitleBar wcTabTop" style="width: 633.2px;"><div class="wcTabScroller" style="left: 0px;"><div class="wcPanelTab wcPanelTabActive" id="0"><div><a href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="-1" class="panel-link-heading">Data Output</a></div></div><div class="wcPanelTab wcPanelTabActive" id="1"><div><a href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="-1" class="panel-link-heading">Explain</a></div></div><div class="wcPanelTab wcPanelTabActive" id="2"><div><a href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="-1" class="panel-link-heading">Messages</a></div></div><div class="wcPanelTab" id="3"><div><a href="http://127.0.0.1:4766/datagrid/panel/6832813?is_query_tool=true&amp;sgid=1&amp;sid=3&amp;server_type=pg&amp;did=16396#" tabindex="-1" class="panel-link-heading">Notifications</a></div></div></div><div class="wcFrameButtonBar" style="min-width: 0px; width: 0px; right: 0px;"></div></div><div class="wcFrameButtonBar" style="min-width: 0px; width: 0px;"><div class="wcFrameButton" title="Close the currently active panel tab" aria-label="Close panel" tabindex="0" style="display: none;"><div class="fa fa-times"></div></div><div class="wcFrameButton" title="Collapse the active panel" style="display: none;"><div class="fa fa-download"></div>C</div></div><div class="wcFrameCenter wcPanelBackground wcScrollableX wcScrollableY" style="left: 0px; right: 0px; bottom: 0px;"><div class="wcPanelTabContent" id="0"><table class="wcLayout wcWide wcTall"><tbody><tr><td><div class="pg-panel-content hide-vertical-scrollbar"><div id="datagrid" class="sql-editor-grid-container text-12 ui-widget slickgrid_505620" tabindex="0" style="height: 264.45px; overflow: hidden; outline: 0px; position: relative;"><div tabindex="0" hidefocus="" style="position:fixed;width:0;height:0;top:0;left:0;outline:0;"></div><div class="slick-header ui-state-default"><div class="slick-header-columns" style="left: -1000px; width: 2266.4px;" unselectable="on"><div class="ui-state-default slick-header-column" id="slickgrid_505620row-header-column" title="" style="width: 24px;"><span class="slick-column-name"><span data-id="select-all" title="Select/Deselect All"><br><img class="select-all-icon" src="./select-all-icon.png"></span></span><div class="slick-resizable-handle"></div></div><div class="ui-state-default slick-header-column" id="slickgrid_505620ndep" title="Read-only column" style="width: 99px;"><div class="slick-header-button editable-column-header-icon"><i class="fa fa-lock"></i></div><span class="slick-column-name"><span data-cell-type="column-header-row" data-test="output-column-header" data-column-id="ndep">  <span class="column-description">    <span class="column-name">ndep</span>    <span class="column-type">numeric (2)</span>  </span></span></span><div class="slick-resizable-handle"></div></div><div class="ui-state-default slick-header-column" id="slickgrid_505620Diferença" title="Read-only column" style="width: 87px;"><div class="slick-header-button editable-column-header-icon"><i class="fa fa-lock"></i></div><span class="slick-column-name"><span data-cell-type="column-header-row" data-test="output-column-header" data-column-id="Diferença">  <span class="column-description">    <span class="column-name">Diferença</span>    <span class="column-type">numeric</span>  </span></span></span><div class="slick-resizable-handle"></div></div></div></div><div class="slick-headerrow ui-state-default" style="display: none;"><div class="slick-headerrow-columns" style="width: 231px;"></div><div style="display: block; height: 1px; position: absolute; top: 0px; left: 0px; width: 231px;"></div></div><div class="slick-top-panel-scroller ui-state-default" style="display: none;"><div class="slick-top-panel" style="width:10000px"></div></div><div class="slick-viewport" style="width: 100%; overflow: auto; outline: 0px; position: relative; height: 224.45px;"><div class="grid-canvas" style="height: 208.45px; width: 231px;"><div class="ui-widget-content slick-row even" style="top:0px"><div class="slick-cell l0 r0"><span data-row="0" data-cell-type="row-header-selector">1</span></div><div class="slick-cell l1 r1"><span style="float:right">10</span></div><div class="slick-cell l2 r2"><span style="float:right">821700</span></div></div><div class="ui-widget-content slick-row odd" style="top:25px"><div class="slick-cell l0 r0"><span data-row="1" data-cell-type="row-header-selector">2</span></div><div class="slick-cell l1 r1"><span style="float:right">20</span></div><div class="slick-cell l2 r2"><span style="float:right">499900</span></div></div><div class="ui-widget-content slick-row even" style="top:50px"><div class="slick-cell l0 r0"><span data-row="2" data-cell-type="row-header-selector">3</span></div><div class="slick-cell l1 r1"><span style="float:right">30</span></div><div class="slick-cell l2 r2"><span style="float:right">323900</span></div></div></div></div><div tabindex="0" hidefocus="" style="position:fixed;width:0;height:0;top:0;left:0;outline:0;"></div></div></div></td></tr></tbody></table></div><div class="wcPanelTabContent wcPanelTabContentHidden" id="1"><table class="wcLayout wcWide wcTall"><tbody><tr><td><div class="pg-panel-content"><div class="sql-editor-explain pg-el-container" tabindex="0"><div role="status" class="pg-panel-message">Use Explain/Explain analyze button to generate the plan for a query. Alternatively, you can also execute "EXPLAIN (FORMAT JSON) [QUERY]".</div></div></div></td></tr></tbody></table></div><div class="wcPanelTabContent wcPanelTabContentHidden" id="2"><table class="wcLayout wcWide wcTall"><tbody><tr><td><div class="pg-panel-content"><div role="status" class="sql-editor-message" tabindex="0">Successfully run. Total query runtime: 74 msec.
+3 rows affected.</div></div></td></tr></tbody></table></div><div class="wcPanelTabContent wcPanelTabContentHidden" id="3"><table class="wcLayout wcWide wcTall"><tbody><tr><td><div class="pg-panel-content"><div id="notification_grid" class="sql-editor-notifications" tabindex="0"><table class="backgrid presentation table table-bordered table-hover table-noouter-border table-bottom-border" role="table"><thead><tr><th class="sortable renderable recorded_time" role="columnheader"><button>Recorded time<span class="sort-caret" aria-hidden="true"></span></button></th><th class="sortable renderable channel" role="columnheader"><button>Event<span class="sort-caret" aria-hidden="true"></span></button></th><th class="sortable renderable pid" role="columnheader"><button>Process ID<span class="sort-caret" aria-hidden="true"></span></button></th><th class="sortable renderable payload" role="columnheader"><button>Payload<span class="sort-caret" aria-hidden="true"></span></button></th></tr></thead><tbody><tr class="empty"><td colspan="4"><span>No data found</span></td></tr></tbody></table></div></div></td></tr></tbody></table></div></div><div class="wcFrameEdgeN wcFrameEdge" style="top: -1px; left: 0px; right: 0px;"></div><div class="wcFrameEdgeS wcFrameEdge" style="bottom: -1px; left: 0px; right: 0px;"></div><div class="wcFrameEdgeW wcFrameEdge" style="left: -1px; top: 0px; bottom: 0px;"></div><div class="wcFrameEdgeE wcFrameEdge" style="right: -1px; top: 0px; bottom: 0px;"></div><div class="wcFrameCornerNW wcFrameEdge" style="top: -1px; left: -1px;"></div><div class="wcFrameCornerNE wcFrameEdge" style="top: -1px; right: -1px;"></div><div class="wcFrameCornerSE wcFrameEdge" style="bottom: -1px; right: -1px;"></div><div class="wcFrameCornerSW wcFrameEdge" style="bottom: -1px; left: -1px;"></div></div></body></html>
